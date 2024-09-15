@@ -11,17 +11,5 @@ spec:
   selector:
     app: nginx-exporter
 ---
-apiVersion: monitoring.coreos.com/v1
-kind: ServiceMonitor
-metadata:
-  name: nginx-exporter
-  labels:
-    release: prometheus
-spec:
-  selector:
-    matchLabels:
-      app: nginx-exporter
-  endpoints:
-  - port: http
-    interval: 30s
+
 

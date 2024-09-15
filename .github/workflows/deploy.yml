@@ -76,6 +76,8 @@ jobs:
         kubectl get services -n monitoring
         kubectl get pods -n logging
         kubectl get services -n logging
-
+    - name: Terraform Destroy
+      if: always()  # 確保在工作流程結束後無論成功或失敗都執行
+      run: terraform destroy -auto-approve
 
 

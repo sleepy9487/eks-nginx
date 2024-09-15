@@ -1,0 +1,11 @@
+prometheus:
+  prometheusSpec:
+    scrapeInterval: 5m
+    scrapeTimeout: 1m
+    additionalScrapeConfigs:
+      - job_name: 'nginx'
+        scrape_interval: 5m
+        scrape_timeout: 1m
+        metrics_path: /metrics
+        static_configs:
+          - targets: ['nginx-exporter-service.default.svc.cluster.local:9113']

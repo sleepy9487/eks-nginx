@@ -1,0 +1,7 @@
+prometheus:
+  prometheusSpec:
+    additionalScrapeConfigs:
+      - job_name: 'nginx-exporter'
+        static_configs:
+          - targets: ['nginx-exporter-service.monitoring.svc.cluster.local:9113']
+

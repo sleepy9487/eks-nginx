@@ -42,8 +42,9 @@ jobs:
       run: |
         kubectl apply -f nginx/nginx-deployment.yaml
         kubectl apply -f nginx/nginx-service.yaml
-        kubectl apply -f nginx/nginx-exporter-service.yml
         kubectl apply -f nginx/nginx-exporter.yml
+        kubectl apply -f nginx/nginx-exporter-service.yml
+        
     
     - name: Install and Expose Grafana
       run: |

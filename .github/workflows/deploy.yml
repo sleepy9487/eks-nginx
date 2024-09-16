@@ -37,6 +37,13 @@ jobs:
     - name: Configure kubectl for EKS
       run: |
         aws eks --region us-east-1 update-kubeconfig --name my-eks-cluster
+
+    - name: Install Grafana and Prometheus repo
+      run : |
+        helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
+        helm repo add grafana https://grafana.github.io/helm-charts
+        helm repo update
+
     
     - name: Apply Nginx Deployment and Service
       run: |

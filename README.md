@@ -1,3 +1,4 @@
+![image](https://github.com/tyiio445/eks-nginx/blob/main/image10135134.png)
 # eks-nginx
 使用 AWS 的 EKS服務整合了 Nginx、Grafana、Prometheus 和 Loki  
 並通過 GitHub Actionsb 與 Terraform 進行 CI/CD 與 IAC 管理

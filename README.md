@@ -13,6 +13,18 @@
 ### 2. github actions workflow
    
 ### 3. 
+
+
+
+本地端檢查 EKS-K8S 服務 
+1. AWS CLI安裝與認證用戶
+https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
+2. 進入EKS-K8S cluster
+aws eks --region us-east-1 update-kubeconfig --name my-eks-cluster
+3. 檢查pods services
+kubectl get pods/svc -n namespace
+
+
   
     
   

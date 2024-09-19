@@ -12,7 +12,7 @@
    
 ### 2. github actions workflow
    
-### 3. 本地端操作EKS-K8S cluster詳見
+### 3. 本地端操作EKS-K8S cluster詳見 Local.md
 
 
 

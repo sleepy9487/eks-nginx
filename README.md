@@ -11,8 +11,12 @@
    - 新增 AWS_ACCESS_KEY_ID / AWS_ACCESS_SECRET_KEY
    
 ### 2. github actions workflow
-   
+   - Github Repo介面 > actions > 選取 Deploy to EKS 選擇run the work flow
 ### 3. 本地端操作EKS-K8S cluster詳見 [Local.md](https://github.com/tyiio445/eks-nginx/blob/main/Local.md)
+
+### 4. 錯誤
+   - terraform destroy時無法刪除
+   - 請先把AWS EC2 -> loadbalancer刪除掉即可
 
 
 

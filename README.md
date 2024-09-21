@@ -5,7 +5,7 @@
 # 環境配置
 ### 0. AWS IAM +建立 policy
    - 區選 us-east-1 並創建 IAM
-   - policy
+   - policy詳見 [IAM-policy.md](https://github.com/tyiio445/eks-nginx/blob/main/IAM-policy.md)
 ### 1. 新增 github secrets 
    - Settings -> secrets -> actions
    - 新增 AWS_ACCESS_KEY_ID / AWS_ACCESS_SECRET_KEY
